@@ -1,27 +1,55 @@
-# Memoteca
+# Memoteca - CRUD de Pensamentos
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.0.
+[![Angular](https://img.shields.io/badge/Angular-v14-red.svg?logo=angular)](https://angular.io/)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-## Development server
+Projeto desenvolvido em Angular para gerenciar cards com pensamentos, contendo texto, autor e modelo selecionável.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 📋 Descrição do Projeto
 
-## Code scaffolding
+A Memoteca é uma aplicação CRUD (Create, Read, Update, Delete) que permite:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Criar cards com pensamentos
+- Visualizar todos os pensamentos cadastrados
+- Editar pensamentos existentes
+- Excluir pensamentos
+- Cada card contém:
+  - Texto do pensamento
+  - Autor
+  - Modelo de layout selecionável
 
-## Build
+## 🚀 Como Executar o Projeto
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Pré-requisitos
 
-## Running unit tests
+- Node.js (v14.x ou superior)
+- Angular CLI (v14.0.0 ou superior)
+- NPM ou Yarn
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Passo a Passo
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. **Instalar dependências**
+   ```bash
+   # Na pasta raiz do projeto:
+   npm install --force
+   ```
+2. **Iniciar o backend (json-server)**
+   ```bash
+   # Navegue até a pasta backend
+   cd backend
+   # Inicie o servidor de mock API
+   npm start
+   # Mantenha este terminal aberto
+   ```
+3. **Iniciar o frontend**
+   ```bash
+   # Volte para a pasta raiz
+   cd ..
+   # Inicie o servidor Angular
+   ng serve
+   ```
+4. **Acessar a aplicação**
+   ```bash
+     # Abra seu navegador em:
+     http://localhost:4200
+   ```
